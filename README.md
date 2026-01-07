@@ -39,8 +39,7 @@ This system combines machine learning and mathematical optimization to build opt
 git clone https://github.com/yourusername/fpl-team-optimizer.git
 cd fpl-team-optimizer
 
-yaml
-Copy code
+
 
 ---
 
@@ -51,15 +50,13 @@ Windows
 python -m venv venv
 venv\Scripts\activate
 
-Copy code
 
 Mac/Linux
 
 python3 -m venv venv
 source venv/bin/activate
 
-yaml
-Copy code
+
 
 ---
 
@@ -67,8 +64,7 @@ Copy code
 
 pip install -r requirements.txt
 
-yaml
-Copy code
+
 
 ---
 
@@ -82,8 +78,6 @@ Copy code
 
 python data_pipeline/run_pipeline.py
 
-yaml
-Copy code
 
 Expected output:
 
@@ -98,8 +92,6 @@ Expected output:
 
 python feature_engineering/run_feature_engineering.py
 
-yaml
-Copy code
 
 Expected output:
 
@@ -113,8 +105,6 @@ Expected output:
 
 python ml_model/run_raw_point_pipeline.py
 
-yaml
-Copy code
 
 Expected output:
 
@@ -128,8 +118,6 @@ Expected output:
 
 python optimization/run_optimization.py
 
-yaml
-Copy code
 
 Expected output:
 
@@ -146,8 +134,6 @@ Optimize FPL team from terminal Ui (For user to have better experience for optim
 
 python fpl_optimizer_tui/run_tui.py
 
-yaml
-Copy code
 
 ---
 
@@ -167,8 +153,7 @@ fpl-simulator/
 │ └── optimization/ Optimization results
 └── requirements.txt Python dependencies
 
-yaml
-Copy code
+
 
 ---
 
@@ -181,8 +166,6 @@ data/predictions/
 ├── latest_raw_points_predictions_gw19.csv
 └── raw_points_with_value_gw19.csv
 
-yaml
-Copy code
 
 ---
 
@@ -193,8 +176,7 @@ data/optimization/
 ├── optimized_team_gw19.csv
 └── transfer_recommendations_gw19.json
 
-yaml
-Copy code
+
 
 ---
 
@@ -203,8 +185,6 @@ Copy code
 python optimization/run_optimization.py --method heuristic
 python optimization/run_optimization.py --top-players 300
 
-yaml
-Copy code
 
 ---
 
@@ -213,8 +193,6 @@ Copy code
 python optimization/run_optimization.py --method mip --timeout 120
 python feature_engineering/run_feature_engineering.py --gameweeks 10
 
-yaml
-Copy code
 
 ---
 
