@@ -39,51 +39,51 @@ git clone https://github.com/yourusername/fpl-team-optimizer.git
 
 cd fpl-team-optimizer
 
-2. Create Virtual Environment
+### 2. Create Virtual Environment
 
-# Windows
+Windows
 python -m venv venv
 venv\Scripts\activate
 
-# Mac/Linux
+Mac/Linux
 python3 -m venv venv
 source venv/bin/activate
 
 
-3. Install Dependencies
+### 3. Install Dependencies
 
 pip install -r requirements.txt
 
 
 🚀 Quick Start Guide
 Run Individual Phases
-Phase 1: Data Pipeline
+###  Phase 1: Data Pipeline
 
-# Download and process data
+Download and process data
 python data_pipeline/run_pipeline.py
 
 
-Phase 2: Feature Engineering
+### Phase 2: Feature Engineering
 
-# Generate comprehensive features
+Generate comprehensive features
 python feature_engineering/run_feature_engineering.py
 
 
-Phase 3: ML Prediction
+### Phase 3: ML Prediction
 
-# Generate RAW point predictions
+Generate RAW point predictions
 python ml_model/run_raw_point_pipeline.py
 
 
-Phase 4: Team Optimization
+### Phase 4: Team Optimization
 
-# Optimize FPL team
+Optimize FPL team
 python optimization/run_optimization.py
 
 
-Phase 5: Terminal UI
+### Phase 5: Terminal UI
 
-# Optimize FPL team from terminal Ui (For user to have better experience for optimizing for single & multiple gameweeks and custom team optimization)
+Optimize FPL team from terminal Ui (For user to have better experience for optimizing for single & multiple gameweeks and custom team optimization)
 python fpl_optimizer_tui/run_tui.py
 
 
