@@ -15,15 +15,6 @@ This system combines machine learning and mathematical optimization to build opt
 
 ---
 
-## Key Results
-
-- 21% more accurate than individual predictions  
-- +30-36 point improvements over current teams  
-- 77% success rate across gameweeks  
-- <30 second optimization time  
-
----
-
 ## Installation & Setup
 
 ### Prerequisites
@@ -140,19 +131,27 @@ python fpl_optimizer_tui/run_tui.py
 ## Project Structure
 
 fpl-simulator/
-├── data_pipeline/          # Phase 1: Data collection
-├── feature_engineering/    # Phase 2: Feature generation (189 features)
-├── ml_model/              # Phase 3: ML predictions (RAW points)
-├── optimization/          # Phase 4: Team optimization (MIP)
-├── scripts/               # Automation scripts
-├── data/                  # All data storage
-│   ├── sqlite/           # SQLite databases
-│   ├── features/         # Generated feature CSVs
-│   ├── models/           # Trained ML models
-│   ├── predictions/      # Weekly predictions
-│   └── optimization/     # Optimization results
-└── requirements.txt      # Python dependencies
+├── data_pipeline/          
+├── feature_engineering/   
+├── ml_model/              
+├── optimization/         
+├── scripts/              
+├── data/                
+│   ├── sqlite/   
+│   ├── features/   
+│   ├── models/   
+│   ├── predictions/  
+│   └── optimization/ 
+└── requirements.txt 
 
+---
+
+## Key Results
+
+- 21% more accurate than individual predictions  
+- +30-36 point improvements over current teams  
+- 77% success rate across gameweeks  
+- <30 second optimization time  
 
 
 ---
