@@ -27,7 +27,7 @@ This system combines machine learning and mathematical optimization to build opt
 
 ### 1. Clone the Repository
 
-git clone https://github.com/prabhuroka/fpl-team-optimizer.git
+git clone https://github.com/prabhuroka/fantasy-premier-league-team-optimizer.git
 ---
 cd fpl-team-optimizer
 
