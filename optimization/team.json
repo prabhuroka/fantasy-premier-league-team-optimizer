@@ -1,0 +1,29 @@
+{
+  "players": [
+    1,
+    627,
+    230,
+    260,
+    257,
+    569,
+    505,
+    384,
+    414,
+    236,
+    387,
+    47,
+    691,
+    624,
+    64
+  ],
+  "bank_balance": 3.5,
+  "free_transfers": 1,
+  "chips_available": [
+    "wildcard",
+    "free_hit",
+    "triple_captain",
+    "bench_boost"
+  ],
+  "total_points": 1256,
+  "overall_rank": 54321
+}
