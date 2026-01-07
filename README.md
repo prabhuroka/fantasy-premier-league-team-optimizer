@@ -34,7 +34,7 @@ This system combines machine learning and mathematical optimization to build opt
 
 ### 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/yourusername/fpl-team-optimizer.git
 cd fpl-team-optimizer
 2. Create Virtual Environment
