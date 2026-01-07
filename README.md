@@ -176,7 +176,7 @@ fpl-simulator/
 - Separated Architecture: RAW prediction + value optimization  
 
 This project relies on the excellent FPL-Elo-Insights dataset for historical FPL data.  
-Special thanks to olbauday and team for maintaining this comprehensive resource that makes data-driven FPL analysis possible.
+Special thanks to [olbauday](https://github.com/olbauday/FPL-Core-Insights) and team for maintaining this comprehensive resource that makes data-driven FPL analysis possible.
 
 ---
 
