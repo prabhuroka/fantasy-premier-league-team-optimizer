@@ -1,4 +1,4 @@
-**FPL Team Optimizer**
+FPL Team Optimizer
 A comprehensive data science platform that automates optimal Fantasy Premier League team selection using machine learning predictions and mathematical optimization algorithms.
 **🚀 Project Overview**
 This system combines machine learning and mathematical optimization to build optimal FPL squads through a multi-phase pipeline:
