@@ -342,3 +342,6 @@ PRIMARY KEY (id, gw, season)
 
 </details>
 
+---
+Run the pipeline sequentially for optimizing FPL team!!!! Have fun with FPL.
+
