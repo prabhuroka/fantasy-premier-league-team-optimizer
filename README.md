@@ -140,58 +140,19 @@ python fpl_optimizer_tui/run_tui.py
 ## Project Structure
 
 fpl-simulator/
-├── data_pipeline/ Data collection
-├── feature_engineering/ Feature generation (189 features)
-├── ml_model/ ML predictions (RAW points)
-├── optimization/ Team optimization (MIP)
-├── data/ All data storage
-│ ├── raw/ Raw data extracted
-│ ├── processed/ SQLite databases
-│ ├── features/ Generated feature CSVs
-│ ├── models/ Trained ML models
-│ ├── predictions/ Weekly predictions
-│ └── optimization/ Optimization results
-└── requirements.txt Python dependencies
+├── data_pipeline/          # Phase 1: Data collection
+├── feature_engineering/    # Phase 2: Feature generation (189 features)
+├── ml_model/              # Phase 3: ML predictions (RAW points)
+├── optimization/          # Phase 4: Team optimization (MIP)
+├── scripts/               # Automation scripts
+├── data/                  # All data storage
+│   ├── sqlite/           # SQLite databases
+│   ├── features/         # Generated feature CSVs
+│   ├── models/           # Trained ML models
+│   ├── predictions/      # Weekly predictions
+│   └── optimization/     # Optimization results
+└── requirements.txt      # Python dependencies
 
-
-
----
-
-## Output Files
-
-### Predictions
-
-data/predictions/
-├── raw_points_predictions_gw19.csv
-├── latest_raw_points_predictions_gw19.csv
-└── raw_points_with_value_gw19.csv
-
-
----
-
-### Optimization Results
-
-data/optimization/
-├── complete_optimization_gw19.json
-├── optimized_team_gw19.csv
-└── transfer_recommendations_gw19.json
-
-
-
----
-
-## For Faster Optimization
-
-python optimization/run_optimization.py --method heuristic
-python optimization/run_optimization.py --top-players 300
-
-
----
-
-## For Better Accuracy
-
-python optimization/run_optimization.py --method mip --timeout 120
-python feature_engineering/run_feature_engineering.py --gameweeks 10
 
 
 ---
