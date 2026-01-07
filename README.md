@@ -191,7 +191,7 @@ MIT License - see LICENSE file for details.
 ## Database Schema
 
 <details>
-<summary><strong>UPDATED DATABASE SCHEMA (ACTUAL IMPLEMENTATION)</strong></summary>
+<summary><strong> DATABASE SCHEMA </strong></summary>
 
 ### Core Tables in Production
 
