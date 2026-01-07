@@ -188,10 +188,157 @@ MIT License - see LICENSE file for details.
 
 ---
 
-## Support
+## Database Schema
 
-For issues, questions, or suggestions:
+<details>
+<summary><strong>UPDATED DATABASE SCHEMA (ACTUAL IMPLEMENTATION)</strong></summary>
 
-- Check the Troubleshooting section  
-- Search existing GitHub issues  
-- Create a new issue with detailed description  
+### Core Tables in Production
+
+---
+
+#### 1. Players master list (772 players)
+
+CREATE TABLE players (
+player_id INTEGER PRIMARY KEY,
+player_code INTEGER,
+first_name TEXT,
+second_name TEXT,
+web_name TEXT,
+team_code INTEGER,
+position TEXT,
+season TEXT DEFAULT '2025-2026'
+);
+
+
+
+---
+
+#### 2. Teams with Elo and FPL strength ratings (20 teams)
+
+CREATE TABLE teams (
+id INTEGER PRIMARY KEY,
+code INTEGER,
+name TEXT,
+short_name TEXT,
+strength INTEGER,
+strength_overall_home INTEGER,
+strength_overall_away INTEGER,
+strength_attack_home INTEGER,
+strength_attack_away INTEGER,
+strength_defence_home INTEGER,
+strength_defence_away INTEGER,
+elo REAL,
+season TEXT DEFAULT '2025-2026'
+);
+
+
+---
+
+#### 3. Player gameweek stats – DISCRETE weekly data (12,835+ records)
+
+CREATE TABLE player_gameweek_stats (
+id INTEGER,
+first_name TEXT,
+second_name TEXT,
+web_name TEXT,
+gw INTEGER,
+total_points INTEGER,
+minutes INTEGER,
+goals_scored INTEGER,
+assists INTEGER,
+clean_sheets INTEGER,
+goals_conceded INTEGER,
+expected_goals REAL,
+expected_assists REAL,
+expected_goal_involvements REAL,
+expected_goals_conceded REAL,
+now_cost REAL,
+selected_by_percent REAL,
+form REAL,
+influence REAL,
+creativity REAL,
+threat REAL,
+ict_index REAL,
+bps INTEGER,
+season TEXT DEFAULT '2025-2026',
+PRIMARY KEY (id, gw, season)
+);
+
+
+---
+
+#### 4. Matches with detailed statistics (467 matches)
+
+CREATE TABLE matches (
+gameweek REAL,
+home_team REAL,
+home_team_elo REAL,
+home_score REAL,
+away_score REAL,
+away_team REAL,
+away_team_elo REAL,
+home_expected_goals_xg REAL,
+away_expected_goals_xg REAL,
+season TEXT DEFAULT '2025-2026'
+);
+
+
+---
+
+#### 5. Player match statistics (6,766 records)
+
+CREATE TABLE player_match_stats (
+player_id INTEGER,
+gw INTEGER,
+match_id TEXT,
+minutes_played INTEGER,
+goals INTEGER,
+assists INTEGER,
+xg REAL,
+xa REAL,
+season TEXT DEFAULT '2025-2026',
+PRIMARY KEY (player_id, match_id, season)
+);
+
+
+
+---
+
+#### 6. Player status and availability data (NEW)
+
+CREATE TABLE player_stats (
+id INTEGER,
+gw INTEGER,
+status TEXT,
+chance_of_playing_next_round INTEGER,
+chance_of_playing_this_round INTEGER,
+selected_by_percent REAL,
+form REAL,
+points_per_game REAL,
+starts INTEGER,
+expected_goals REAL,
+expected_assists REAL,
+expected_goals_conceded REAL,
+influence REAL,
+creativity REAL,
+threat REAL,
+ict_index REAL,
+bps INTEGER,
+transfers_in INTEGER,
+transfers_out INTEGER,
+transfers_in_event INTEGER,
+transfers_out_event INTEGER,
+value_form REAL,
+value_season REAL,
+ep_next REAL,
+ep_this REAL,
+now_cost REAL,
+cost_change_event INTEGER,
+season TEXT DEFAULT '2025-2026',
+PRIMARY KEY (id, gw, season)
+);
+
+
+</details>
+
