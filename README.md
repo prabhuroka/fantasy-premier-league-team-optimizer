@@ -120,7 +120,7 @@ Expected output:
 
 ---
 
-## Terminal UI
+### Phase 5: Terminal UI
 
 Optimize FPL team from terminal Ui (For user to have better experience for optimizing for single & multiple gameweeks and custom team optimization)
 
