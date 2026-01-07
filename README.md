@@ -143,6 +143,7 @@ fpl-simulator/
 │   ├── models/   
 │   ├── predictions/  
 │   └── optimization/ 
+---
 └── requirements.txt 
 
 ---
