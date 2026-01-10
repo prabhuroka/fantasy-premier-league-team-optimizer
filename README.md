@@ -344,5 +344,4 @@ PRIMARY KEY (id, gw, season)
 
 ---
 Run the pipeline sequentially for optimizing FPL team!!!! Have fun with FPL.
-https://github.com/prabhuroka/fantasy-premier-league-team-optimizer/blob/main/fpl-image.jpeg
 
